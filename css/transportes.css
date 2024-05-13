@@ -22,6 +22,7 @@ header h1{
 
 nav{
     background-color: #6da9ed;
+    margin-bottom: 20px;
 }
 
 nav ul{
@@ -34,6 +35,7 @@ nav ul{
 nav ul li{
     flex-grow: 1;
 }
+
 nav ul li a{
     color: white;
     text-decoration: none;
@@ -54,6 +56,7 @@ footer{
     background-color: #ccc;
     padding: 20px 0;
     text-align: center;
+    margin-top: 20px;
 }
 
 .holder{
@@ -66,17 +69,144 @@ h2{
     color: #2e64a1;
     font-weight: 400;
 }
+
 /*inicio home*/
 
+.columnas{
+    display: flex;
+}
 .bienvenidos{
     width: 75%;
+    padding-right: 20px;
 }
 
 .testimonios{
     width: 25%;
 }
 
+.bienvenidos p {
+    font-size: 20px;
+}
 
+.testimonio {
+    background-color: #ccc;
+    padding: 16px;
+}
 
+.testimonio .cita{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 22px;
+    display: block;
+}
+
+.testimonios .autor{
+    font-size: 12px;
+    display: block;
+    text-align: center;
+    margin: 16px 0;
+}
 
 /*fin de home*/
+
+
+/* Inicio nosotros*/
+
+.historia p{
+    font-size: 12px;
+}
+
+.personas{
+    display: flex;
+    justify-content: space-between;
+}
+
+.persona{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    width: 18%;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.persona img{
+    border-radius: 50%;
+    box-shadow: 0 0 5px black;
+    width: 40%;
+    margin: 10px 0 12px;
+}
+
+.persona h5, .persona h6{
+    color: #2e64a1;
+    margin: 0;
+    font-weight: normal;
+}
+
+.persona h5{
+    font-size: 14px;
+}
+
+.persona h6{
+    font-style: italic;
+    font-size: 13px;
+}
+
+.persona p{
+    font-size: 12px;
+}
+
+/*fin nosotros*/
+
+/*inicio contacto*/
+
+.contacto{ 
+    display: flex;
+}
+
+.contacto div{
+    width: 100%;
+}
+
+.datos p{
+    font-size: 14px;
+}
+
+.datos ul li{
+    font-size: 13px;
+}
+
+.formulario p{
+    display: flex;
+}
+
+.formulario p label{
+    min-width: 100px;
+    background-color: #6da9ed;
+}
+
+.formulario p input , 
+.formulario p textarea{
+    width: 100%;
+    background-color: #ddd;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 6px;
+    font-size: 14px;
+}
+
+.formulario p textarea{
+resize: none;
+height: 150px;
+}
+
+.formulario input[type="submit"]{
+    background-color: #6da9ed;
+    width: auto;
+    padding: 8px;
+    box-shadow: 0 0 10px rgba(o,o,o,o.3);
+    color: white;
+    cursor: pointer;
+}
+
+/*fin contacto*/
