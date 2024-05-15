@@ -60,7 +60,7 @@ footer{
 }
 
 .holder{
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
 
 }
@@ -71,7 +71,9 @@ h2{
 }
 
 /*inicio home*/
-
+.homeimg img{
+    max-width: 100%;
+}
 .columnas{
     display: flex;
 }
@@ -178,7 +180,7 @@ h2{
 }
 
 /*.formulario p{
-    display: flex; hace que el lebal ,input esten en la misma linea
+    display: flex; hace que el label ,input esten en la misma linea
 }*/
 
 .formulario p label{
@@ -226,3 +228,56 @@ height: 150px;
 }
 
 /*fin contacto*/
+/*Inicio @media*/
+@media screen and (max-width:550px){
+    /*home*/
+    .columnas{
+        flex-direction: column;
+    }
+    .bienvenidos,.testimonios{
+        width: 100%;
+    }
+    .holder{
+        padding: 0 16px;
+    }
+    .personas{
+        flex-wrap: wrap;
+        gap: 16px;
+
+    }
+    .persona{
+        width: 47%;
+    }
+    .contactos{
+        flex-direction: column;
+    }
+    .datos{
+        display: none;
+    }
+    header .holder{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0 16px 0;
+    }
+    header h1{
+        position: static;
+        margin-left: 10px;
+        /*display:none;*/
+        font-size: 27px;
+    }
+
+    header img {
+        max-width: 80px;
+    }
+}
+/*fin @media*/
+
+@media screen and (max-width:320px){
+
+    nav ul.holder{
+        flex-direction: column;
+        padding: 0;
+    }
+
+}
